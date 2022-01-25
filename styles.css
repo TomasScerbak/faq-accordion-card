@@ -6,6 +6,12 @@ body {
   line-height: 1.5;
   font-size: 1.2rem;
   font-family: var(--ff-kumbh-sans);
+  background: rgb(101, 101, 231);
+  background: linear-gradient(
+    40deg,
+    rgba(101, 101, 231, 1) 30%,
+    rgba(175, 103, 233, 1) 100%
+  );
 }
 *,
 *::before,
@@ -16,6 +22,7 @@ body {
   /* Colors Primary Text */
   --very-dark-desaturated-blue: hsl(238, 29%, 16%);
   --soft-red: hsl(14, 88%, 65%);
+  --white: #ffff;
 
   /* Background gradient */
   --soft-violet: hsl(273, 75%, 66%);
@@ -39,14 +46,99 @@ h1 {
   color: var(--very-dark-desaturated-blue);
 }
 p {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   color: var(--very-dark-grayish-blue);
+}
+@media screen and (min-width: 1000px) {
+  p {
+    font-size: 1.4rem;
+  }
+}
+/* Container */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+/* Card Background */
+.bg-pattern {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+@media screen and (min-width: 1000px) {
+  .bg-pattern {
+    left: -65%;
+    top: -52%;
+  }
+}
+/* Card */
+.card {
+  position: relative;
+  border-radius: 23px;
+  background-color: var(--white);
+  margin: 0 2.4rem;
+  padding: 13.2rem 2.4rem 4.8rem;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.card-heading {
+  text-align: center;
+}
+.card-body {
+  text-align: left;
+}
+.question-box {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 0.5px solid var(--light-grayish-blue);
+  cursor: pointer;
+}
+.question-text:hover {
+  color: var(--soft-red);
+}
+.question {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.arrow {
+  margin-left: 4rem;
+  width: 0.9rem;
+  height: 0.5rem;
+}
+.is-hidden {
+  display: none;
+}
+.is-bold {
+  font-weight: bold;
+}
+@media screen and (min-width: 1000px) {
+  .card {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 3rem;
+    width: 92rem;
+    height: 50.9rem;
+  }
+  .card-body {
+    margin-bottom: 4rem;
+  }
+  .card-heading {
+    text-align: left;
+  }
 }
 /* Author */
 .attribution {
   font-size: 11px;
   text-align: center;
+  margin-top: 1rem;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: hsl(230, 21%, 78%);
 }
