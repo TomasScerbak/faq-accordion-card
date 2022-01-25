@@ -22,6 +22,17 @@
   <body>
     <main>
       <div class="container">
+        <picture>
+          <source
+            media="(min-width: 900px)"
+            srcset="images/illustration-box-desktop.svg"
+          />
+          <img
+            class="box"
+            src="images/illustration-box-desktop.svg"
+            alt="box image"
+          />
+        </picture>
         <div class="card">
           <picture>
             <source
@@ -36,6 +47,21 @@
               class="bg-pattern"
               src="images/bg-pattern-mobile.svg"
               alt="image shadow"
+            />
+          </picture>
+          <picture>
+            <source
+              media="(min-width: 900px)"
+              srcset="images/illustration-woman-online-desktop.svg"
+            />
+            <source
+              media="(min-width: 480px)"
+              srcset="images/illustration-woman-online-mobile.svg"
+            />
+            <img
+              class="illustration-image"
+              src="images/illustration-woman-online-mobile.svg"
+              alt="illustration picture of a women looking at TV screen"
             />
           </picture>
           <div class="card-body">
