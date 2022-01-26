@@ -146,6 +146,10 @@ p {
   width: 0.9rem;
   height: 0.5rem;
 }
+.toggle-up {
+  transform: rotate(180deg);
+  translate: rotate 0.5s;
+}
 .is-hidden {
   display: none;
 }
