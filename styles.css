@@ -145,10 +145,6 @@ p {
   margin-left: 4rem;
   width: 0.9rem;
   height: 0.5rem;
-  translate: transform 2s;
-}
-.rotate {
-  transform: rotate(180deg);
 }
 .is-hidden {
   display: none;
