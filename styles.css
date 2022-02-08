@@ -103,6 +103,12 @@ p {
     z-index: 9999;
   }
 }
+@media screen and (min-width: 1500px) {
+  .box {
+    top: 43.5%;
+    left: 22%;
+  }
+}
 /* Card */
 .card {
   position: relative;
@@ -147,7 +153,7 @@ p {
   height: 0.5rem;
 }
 .toggle-up {
-  transform: rotate(180deg);
+  transform: rotateX(deg);
   transition: 0.5s ease;
 }
 .is-hidden {
